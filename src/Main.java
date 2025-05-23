@@ -6,6 +6,8 @@ public class Main {
         int input2 = 20;
         String name = "Henk";
 
+        /*Ik twijfelde tussen het aanmaken van meer variabelen om verder te testen, maar heb ik uiteindelijk besloten om meestal de bestaande variabelen aan nieuwe waardes toe te wijzen*/
+
         hello();
         System.out.println("");
 
@@ -17,6 +19,9 @@ public class Main {
         postiveOrZeroOrNegativ(number);
         number = 0;
         postiveOrZeroOrNegativ(number);
+        number = 56;
+        postiveOrZeroOrNegativ(number);
+        number = -43;
         System.out.println("");
 
         bartender(name);
@@ -53,7 +58,7 @@ public class Main {
          } else if (number < 0){
              System.out.println("This number is negative!");
          } else {
-             System.out.println("This number is 0");
+             System.out.println("This number is 0.");
          }
      }
 
