@@ -7,12 +7,29 @@ public class Main {
         String name = "Henk";
 
         hello();
+        System.out.println("");
 
         positiveOrNegative(number);
+        number = -13;
+        positiveOrNegative(number);
+        System.out.println("");
+
+        postiveOrZeroOrNegativ(number);
+        number = 0;
+        postiveOrZeroOrNegativ(number);
+        System.out.println("");
 
         bartender(name);
+        name = "Renske";
+        bartender(name);
+        name = "Willem";
+        bartender(name);
+        System.out.println("");
 
-
+        sum(input1, input2);
+        int input3 = 32;
+        int input4 = 3;
+        sum(input3, input4);
 
     }
 
@@ -28,7 +45,7 @@ public class Main {
         }
      }
 
-     // Ik had hierboven ook gewoon if-else kunnen gebruiken natuurlijk, maar als de gebruiker dan 0 invoert, wordt het dan niet fout?
+    /* Ik had hierboven ook gewoon if-else kunnen gebruiken natuurlijk, maar als de gebruiker dan 0 invoert, wordt het dan niet fout? */
 
      public static void postiveOrZeroOrNegativ(int number){
          if (number > 0){
@@ -49,7 +66,7 @@ public class Main {
                 System.out.println("Jenever");
                 break;
             case "Henk":
-                System.out.println("Pilsje");
+                System.out.println("Pilske");
                 break;
             default:
                 System.out.println("Ain't seen ya in my bar before!");
@@ -58,8 +75,7 @@ public class Main {
      }
 
      public static void sum(int input1, int input2){
-
-
+         System.out.println("The sum of the given numbers is " + (input1 + input2));
      }
 
 }
